@@ -1,32 +1,57 @@
-# Salesforce Barcode Scanner Setup Guide
+<p align="center">
+  <a href="https://github.com/DochertyDev/Salesforce-Barcode-Scanner">
+    <img src="images/apple-touch-icon.png" width="150" alt="Salesforce Barcode Scanner">
+  </a>
+</p>
 
-![Screenshot](images/SalesforceBarcodeScannerscreenshot.jpg)
+<h1 align="center">
+Salesforce Barcode Scanner Setup Guide
+</h1>
 
-A comprehensive guide to implementing barcode scanning functionality within your Salesforce environment.
+<h2 align="center">Scan. Track. Act.
+</h2>
+
+<h3 align="center">Bring instant barcode scanning and automation to your Salesforce workflow.
+</h3>
+
+<div align="center">
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![GitHub Stars](https://img.shields.io/github/stars/DochertyDev/Salesforce-Barcode-Scanner)](https://github.com/DochertyDev/Salesforce-Barcode-Scanner)
+
+</div>
+
+:star: _Love Salesforce Barcode Scanner? Give us a star to help other developers discover it!_
+
+<br />
+
+<div>
+<img src="images\SalesforceBarcodeScannerscreenshot.jpg" alt="Salesforce Barcode Scanner Screenshot" width="800" style="border-radius: 16px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2); transform: perspective(1000px) rotateX(2deg); transition: transform 0.3s ease;">
+</div>
 
 > **Note:** This repository contains instructions only. You do not need to clone this repository to implement the functionality. Simply follow the steps outlined below.
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 
-- [Overview](#overview)
+- [Overview](#-overview)
 - [Prerequisites](#prerequisites)
-- [Setup Instructions](#setup-instructions)
+- [Setup Instructions](#-setup-instructions)
   - [1. Create a Formula Field for the QR Code](#1-create-a-formula-field-for-the-qr-code)
   - [2. Install the Unofficial Salesforce Barcode Scanning Package](#2-install-the-unofficial-salesforce-barcode-scanning-package)
   - [3. Create the Screen Flow](#3-create-the-screen-flow)
   - [4. Create the Lightning App for the Screen Flow](#4-create-the-lightning-app-for-the-screen-flow)
-- [Usage](#usage)
-- [Troubleshooting](#troubleshooting)
+- [Usage](#️-usage)
+- [Troubleshooting](#-troubleshooting)
+- [Contributing](#-contributing)
+- [Support the Project](#-support-the-project)
+- [Disclaimer](#️-disclaimer)
 
 ---
 
-## Overview
+## 📄 Overview
 
 This guide provides step-by-step instructions to build and configure a barcode scanning feature in Salesforce. This functionality allows users to leverage their mobile device's camera to scan barcodes through the Salesforce mobile app. This can then be used to query for records like Assets, Products, or custom objects within your Salesforce org. This is ideal for use cases such as field service asset tracking, inventory management, and many more use cases.
-
----
 
 ## Prerequisites
 
@@ -55,9 +80,7 @@ Before you begin, ensure you have the following:
 >- [Sandbox Org Package](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5G000004fz7hQAA)
 >- [Article](https://unofficialsf.com/from-josh-dayment-barcode-scanning-component-for-flow/) with details on the package
 
----
-
-## Setup Instructions
+## 🚀 Setup Instructions
 
 Follow these steps to build the barcode scanner functionality.
 
@@ -165,9 +188,7 @@ The last step is to save and activate your new screen flow.
 > **NOTE:**
 >This is the end of the configuration, great work! You are now ready to test.
 
----
-
-## Usage
+## ⚙️ Usage
 
 While the assumption is that the QR Codes would be printed out and attached to items for labeling and future scanning, this usage guide will explain the steps to testing scanning QR Codes for a record open on Desktop via the Salesforce mobile app.
 
@@ -183,11 +204,33 @@ While the assumption is that the QR Codes would be printed out and attached to i
 
 Using the foundation of the QR Code generation and Barcode Scanning package, Salesforce flows can extend these tools to a fit a variety of different use cases.
 
----
-
-## Troubleshooting
+## ❓ Troubleshooting
 
 - **Issue:** Barcode scanner does not open.
   - **Solution:** Ensure you are using the Salesforce mobile app on a compatible device, the Salesforce mobile app MUST be in the "Mobile Only" mode (this can be selected in the Menu). The scanner functionality is not available on desktop browsers (but you can display QR Codes there).
 - **Issue:** No records are found after scanning.
   - **Solution:** Verify that the scanned barcode exists on a record in Salesforce and that the user has permission to view that record and the field they are trying to scan.
+
+## 🤝 Contributing
+
+<div align="center">
+<a href="https://github.com/DochertyDev/Salesforce-Barcode-Scanner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DochertyDev/Salesforce-Barcode-Scanner&max=400&columns=20"  width="100"/>
+</a>
+</div>
+
+We welcome contributions from the community! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## 🌟 Support the Project
+
+**Love Salesforce Barcode Scanner?** Give us a ⭐ on GitHub!
+
+<div align="center">
+  <p>
+      <img width="800" src="https://api.star-history.com/svg?repos=DochertyDev/Salesforce-Barcode-Scanner&type=Date" alt="Star-history">
+  </p>
+</div>
+
+## ⚠️ Disclaimer
+
+This guide is provided for informational purposes only and is not affiliated with or endorsed by Salesforce.
